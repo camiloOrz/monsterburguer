@@ -465,6 +465,7 @@ footer
         display: flex;
     }
     .header-text{
+        margin-top: 70px;
         width: 100%;
     }
     .header-content img{
@@ -475,8 +476,9 @@ footer
         font-size: 25px;
     }
     .header-text p{
+        margin-bottom: 10px;
         padding: 0px 1px;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .hamburguesas-group img{
