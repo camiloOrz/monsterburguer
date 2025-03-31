@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 html{
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 *{
@@ -11,6 +13,7 @@ html{
     list-style: none;
 }
 body{
+
 
     width: 100%;
     overflow-x: hidden;
@@ -80,8 +83,10 @@ a{
     display: none;
 }
 .barra-container{
+    align-items: center;
+    justify-content: space-between;
     backdrop-filter: blur(10px);
-    padding-left: 70px;
+    padding: 0px 50px;
     margin-bottom: 10px;
     display: flex;
     position: fixed;
@@ -100,7 +105,6 @@ a{
 .barra-container img {
     color: white;
     margin-top: 10px;
-    padding-left: 50px;
     height: 56px;
     width: auto;
 }
@@ -112,12 +116,9 @@ a{
     0 0 100px #a50000;
 }
 .navbar{
-    padding-left: 50px;
-    padding-right: 70px;
-    display: flex;
     justify-content: flex-end;
+    display: flex;
     align-items: center;
-    width: 100%;
 }
 .barra ul {
     padding: 7px 16px;
@@ -148,7 +149,7 @@ a{
 
 
 .header-content img{
-    margin-top: 20px;
+    margin-top: 0px;
     filter: drop-shadow(0 0 20px #000000);
     height: 500px;
 }
@@ -169,20 +170,17 @@ a{
 .header-text{
     margin-top: 30px;
     text-align: center;
-    width: 50%;
-    margin-left: px;
 }
-.header-img{
-    
-    padding: 20px;
-}
+
 .header-text h1{
-    padding: 0px 10px;
+    justify-content: center;
+    display: flex;
     text-shadow: #ff00008c 0px 1px 60px;
     color: #ff0000;
     font-size: 60px;
 }
 .header-text p{
+    padding: 0px 90px;
     text-shadow: #000000 0px 1px 10px;
     padding-bottom: 10px;
     font-size: 23px;
@@ -242,9 +240,8 @@ button {
 }
 .hamburguesas-group{
 
-    width: 20px;
     height: auto;
-    padding: 10px 150px;
+    margin: 10px 50px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
@@ -254,6 +251,7 @@ button {
     justify-content: space-between;
 }
 .hamburguesas-group h3{
+    width: 20px;
     text-align: center;
     color: white;
     margin-bottom: 2px;
@@ -267,9 +265,8 @@ button {
 }
 .bebidas-group{
     
-    width: 20px;
     height: auto;
-    padding: 10px 150px;
+    margin: 10px 50px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
@@ -301,6 +298,8 @@ button {
 
 }
 .bebidas-group h3{
+    width: 20px;
+
     text-align: center;
     color: white;
     margin-bottom: 2px;
@@ -438,8 +437,30 @@ footer
     background: #e4405f;
     color: #fff;
   }
+  .logo{
+    display: flex;
+  }
   /*RESPOSIVE*/
   @media (max-width: 600px) {
+    .logo{
+        visibility: hidden;
+        display: none;
+    }
+    .barra-container{
+        justify-content: center;
+    }
+    
+    
+    
+       
+   
+    
+    .section-titulo h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 20px;
+    }
     .header-content{
         display: flex;
     }
@@ -447,16 +468,17 @@ footer
         width: 100%;
     }
     .header-content img{
-        height: 270px;
+        height: 180px;
     }
     .header-text h1{
 
-        font-size: 35px;
+        font-size: 25px;
     }
     .header-text p{
-        display: none;
-        font-size: 15px;
+        padding: 0px 1px;
+        font-size: 10px;
     }
+    
     .hamburguesas-group img{
         width: 150px;
     }
@@ -466,6 +488,11 @@ footer
     .combos-group img{
         width: 150px;
     }
+    button{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+   
   } 
 
 
